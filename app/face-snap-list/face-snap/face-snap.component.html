@@ -1,0 +1,10 @@
+<!--les {{}} permettent le string biding
+et [] permettent de lier les variables au attributs de classes
+et les () pour lier au methodes-->
+
+<div class="face-snap-card" [ngClass]="{ snapped: aSnap === 'Oops, unSnap!' }">
+  <h2>{{ faceSnap.title | uppercase }}</h2>
+  <p>{{ faceSnap.description }}</p>
+  <button (click)="onViewFaceSnap()">VIEW</button>
+</div>
+
